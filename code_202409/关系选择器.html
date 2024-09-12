@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关系选择器</title>
+    <!--后代选择器 选择被ul包含的li元素-->
+    <style>
+        ul li {
+            color: red;
+        }
+
+        .present .child {
+            color: #00ffff;
+        }
+    </style>
+    <!--子代选择器-->
+    <style>
+        div>em {
+            color: beige;
+        }
+
+        span,
+    </style>
+    <!--相邻兄弟选择器-->
+    <style>
+        p+h3 {
+            color: blueviolet;
+        }
+    </style>
+    <!--通用兄弟选择器-->
+    <style>
+        h3~p {
+            color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <div>
+            <ol>
+                <p>sfsd</p>
+                <li>列表4</li>
+                <li>列表5</li>
+            </ol>
+        </div>
+
+    </ul>
+    <ol>
+        <li>列表6</li>
+        <li>列表7</li>
+    </ol>
+    <div class="present">
+        <div class="child">
+            <h2>水蓝色</h2>
+        </div>
+        <div>
+            无色
+        </div>
+
+    </div>
+    <div>
+        <span>
+            aaa
+            <p>bbb</p>
+        </span>
+        <p>ccc</p>
+        <span>ddd</span>
+    </div>
+    <div><em>hihihi<p>sfsd</p></em></div>
+    <div>
+        <h3>相邻兄弟选择器</h3>
+        <p>相邻兄弟选择器</p>
+        <p>相邻兄弟选择器</p>
+    </div>
+    <div>
+        <h3>相邻兄弟选择器</h3>
+
+        <p>相邻兄弟选择器</p>
+
+        <p>相邻兄弟选择器</p>
+    </div>
+</body>
+
+</html>

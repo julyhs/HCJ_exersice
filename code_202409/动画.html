@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        @keyframes myAnim {
+            0% {
+                background-color: red;
+                transform: rotate();
+
+            }
+
+            50% {
+                background-color: green;
+                border-radius: 100%;
+                margin-top: 10%;
+            }
+
+            100% {
+                background-color: red;
+                transform: rotate(360deg);
+
+            }
+        }
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+            background-color: red;
+            position: relative;
+            float: left;
+        }
+
+        .box1:hover {
+            animation: myAnim 1s linear 0s infinite;
+        }
+
+
+
+        @keyframes bounce {
+
+            60%,
+            80%,
+            to {
+                transform: translateY(400px);
+                animation-timing-function: ease;
+
+            }
+
+            70% {
+                transform: translateY(300px);
+            }
+
+            90% {
+                transform: translateY(350px);
+            }
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+            margin-left: 10px;
+            border-radius: 100%;
+            animation: bounce 3s cubic-bezier(.1, .25, 1, .25);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"> </div>
+    <div class="ball"></div>
+
+</body>
+
+</html>
