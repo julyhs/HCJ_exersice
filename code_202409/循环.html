@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>循环</title>
+</head>
+
+<body>
+    //break直接跳出整个循环，而continue只是跳出当前循环并进行下一次循环
+    <script>
+        for (let index = 0; index < 6; index++) {
+            if (index == 3) {
+                break;
+            }
+            console.log("break" + index);
+
+        }
+
+        for (let index = 0; index < 6; index++) {
+
+            if (index == 3) {
+                continue;
+            }
+            console.log("continue" + index);
+
+
+        }
+    </script>
+</body>
+
+</html>
