@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <style>
+        .box_f {
+            background-color: aqua;
+            width: 100%;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .box_c {
+            background-color: red;
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .box_n {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            clear: both;
+            margin: 10px;
+        }
+
+        .box2_f {
+            display: flex;
+            flex-direction: row;
+            width: 200px;
+            background-color: brown;
+        }
+
+        .box2_c {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_f">
+        <!--当一个元素浮动之后，它会被移出正常的文档流，然后向左或者向右平移，一直平移直到碰到了所处的容器的边框，或者碰到另外一个浮动的元素-->
+        <div class="box_c"></div>
+        <div class="box_c"></div>
+        <div class="box_c"></div>
+        <div class="box_n"></div>
+        <div class="box_n"></div>
+        <div class="box_n"></div>
+    </div>
+    <div class="box_n"></div>
+
+
+    <div class="box2_f">
+        <div class="box2_c"></div>
+        <div class="box2_c"></div>
+        <div class="box2_c"></div>
+    </div>
+</body>
+
+</html>

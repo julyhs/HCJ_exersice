@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字符串</title>
+</head>
+
+<body>
+    <script>
+        var str1 = 'welcome to "universal studio theme park"';
+        console.log(str1);
+        var str2 = "Welcome to \"Tokoy Disney Sea\"";
+        console.log(str2);
+        var str3 = "IF i have enough money\nI will go to the TyL";
+        console.log(str3);
+        /* 返回第10位的字符 */
+        console.log(str3.charAt(10));
+        /* 链接两个字符串 */
+        var stttt = str1.concat(str2, str3);
+        console.log(stttt + true + 1);
+        var str4 = "It's a new day."
+        /* 从7位开始，截取到10位之前的字符串 */
+        console.log(str4.substring(7, 10));
+        /* 从5位开始截取7个位置的字符串 */
+        console.log(str4.substr(5, 7));
+        /* 判断是否存在某一个字符的，返回位置,没有返回-1 */
+        console.log(str4.indexOf("a"));
+        console.log(str4.indexOf("abc"));
+        /* 第二个参数事该位置向后匹配 */
+        console.log(str4.indexOf("a", 12));
+        /* 如果第一个参数是负数，则倒序返回相应字符串，如果第二个参数是负数，自动转换成0，返回空字符串 */
+        var info = "如果第一个参数是负数，则倒序返回相应字符串，如果第二个参数是负数，自动转换成0，返回空字符串";
+        var result = info + "</br>" + str4.substr(-4);
+        console.log(info + "\n" + str4.substr(-4));
+        document.write(result)
+        info = "用于去除字符串两端的空格";
+        var str5 = " This is cook ";
+        console.log(str5.trim());
+        document.write("</br>" + info + "</br>" + str5.trim());
+        /* 单独去掉头部的或是尾部的空格 */
+        str5.trimEnd();
+        str5.trimStart();
+        info = "按照参数分离字符串";
+        str6 = "Vue Html |CSS JAVASCRIPT";
+        /* 第二个参数是返回的数组的参数的数量 */
+        console.log(str6.split("C", 2));
+    </script>
+</body>
+
+</html>

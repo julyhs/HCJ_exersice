@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+
+<body>
+    <form action="../pics/2.jpg" method="get" name="myform1">
+        <input type="text" placeholder="searching..." title="searching">
+        <input type="submit">
+
+    </form>
+    <hr>
+    <form action="https://cn.bing.com/" name="myform2">
+        <input type="password" placeholder="typing" value="value2" name="input2">
+        <input type="button" value="click">
+        <div>
+            <!--需要设置name属性来限制只能选择一个-->
+            <input type="radio" name="gender" checked>male
+            <input type="radio" name="gender">female
+        </div>
+        <div>
+            <select name="citychoose" id="">
+                <option value="0" disabled selected>choose your city</option>
+                <option value="1">BEIJING</option>
+                <option value="2">OSAKA</option>
+                <option value="3">NEWYORK</option>
+            </select>
+        </div>
+        <div>
+            <input type="date">
+        </div>
+        <div>
+            <input type="time">
+        </div>
+        <div>
+            <input type="reset">
+        </div>
+        <div>
+            <input type="checkbox" name="checkbox1">1</input>
+            <input type="checkbox" name="checkbox2">2</input>
+            <input type="checkbox" name="checkbox3">3</input>
+        </div>
+        <div>
+            <input type="file">
+        </div>
+        <div>
+            <input type="number">
+        </div>
+        <div>
+            <input type="color">
+        </div>
+    </form>
+
+</body>
+
+</html>
