@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS输出方式</title>
+</head>
+
+<body>
+    <script>
+        var name = "Osaka";
+        console.log(name);
+        // alert(name);
+
+
+
+        // document.write("Welcome to " + name);
+        for (let row = 4; row > 0; row--) {
+
+            for (let index = 0; index < row; index++) {
+                document.write("&nbsp");
+
+            }
+            for (let col = 5; col > row; col--) {
+                document.write("o");
+
+            }
+
+            for (let index = 0; index < row; index++) {
+                document.write("&nbsp");
+
+            }
+            document.write("</br>");
+
+        }
+        for (let row = 5; row > 0; row--) {
+
+            for (let index = 5; index > row; index--) {
+                document.write("&nbsp");
+
+            }
+            for (let col = 0; col < row; col++) {
+                document.write("o");
+
+            }
+
+            for (let index = 5; index > row; index--) {
+                document.write("&nbsp");
+
+            }
+            document.write("</br>");
+
+        }
+        var sum = 0;
+        for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= i; j++) {
+                sum = i * j;
+                document.write(j + "*" + i + "=" + sum);
+                if (sum < 10) {
+                    document.write("&nbsp&nbsp");
+                }
+                document.write("&nbsp&nbsp");
+            }
+            document.write("</br>");
+
+        }
+    </script>
+</body>
+
+</html>
